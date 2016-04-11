@@ -8,13 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		5E9259901CB9F257009EB918 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E92598F1CB9F257009EB918 /* AppDelegate.swift */; };
-		5E9259921CB9F257009EB918 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9259911CB9F257009EB918 /* ViewController.swift */; };
 		5E9259951CB9F257009EB918 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E9259931CB9F257009EB918 /* Main.storyboard */; };
 		5E9259981CB9F257009EB918 /* SwiftUIKitCatalog.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5E9259961CB9F257009EB918 /* SwiftUIKitCatalog.xcdatamodeld */; };
 		5E92599A1CB9F257009EB918 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E9259991CB9F257009EB918 /* Assets.xcassets */; };
 		5E92599D1CB9F257009EB918 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E92599B1CB9F257009EB918 /* LaunchScreen.storyboard */; };
 		5E9259A81CB9F257009EB918 /* SwiftUIKitCatalogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9259A71CB9F257009EB918 /* SwiftUIKitCatalogTests.swift */; };
 		5E9259B31CB9F257009EB918 /* SwiftUIKitCatalogUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9259B21CB9F257009EB918 /* SwiftUIKitCatalogUITests.swift */; };
+		5E9259C11CBA212D009EB918 /* UIColor+ApplicationSpecific.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9259C01CBA212D009EB918 /* UIColor+ApplicationSpecific.swift */; };
+		5E9259C41CBB94BD009EB918 /* ActivityIndicatorTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9259C31CBB94BD009EB918 /* ActivityIndicatorTableController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +38,6 @@
 /* Begin PBXFileReference section */
 		5E92598C1CB9F257009EB918 /* SwiftUIKitCatalog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIKitCatalog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E92598F1CB9F257009EB918 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5E9259911CB9F257009EB918 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5E9259941CB9F257009EB918 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5E9259971CB9F257009EB918 /* SwiftUIKitCatalog.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SwiftUIKitCatalog.xcdatamodel; sourceTree = "<group>"; };
 		5E9259991CB9F257009EB918 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +49,8 @@
 		5E9259AE1CB9F257009EB918 /* SwiftUIKitCatalogUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUIKitCatalogUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E9259B21CB9F257009EB918 /* SwiftUIKitCatalogUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIKitCatalogUITests.swift; sourceTree = "<group>"; };
 		5E9259B41CB9F257009EB918 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E9259C01CBA212D009EB918 /* UIColor+ApplicationSpecific.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+ApplicationSpecific.swift"; sourceTree = "<group>"; };
+		5E9259C31CBB94BD009EB918 /* ActivityIndicatorTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorTableController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,8 +101,9 @@
 		5E92598E1CB9F257009EB918 /* SwiftUIKitCatalog */ = {
 			isa = PBXGroup;
 			children = (
+				5E9259C21CBB948B009EB918 /* UIKitControllers */,
 				5E92598F1CB9F257009EB918 /* AppDelegate.swift */,
-				5E9259911CB9F257009EB918 /* ViewController.swift */,
+				5E9259C01CBA212D009EB918 /* UIColor+ApplicationSpecific.swift */,
 				5E9259931CB9F257009EB918 /* Main.storyboard */,
 				5E9259991CB9F257009EB918 /* Assets.xcassets */,
 				5E92599B1CB9F257009EB918 /* LaunchScreen.storyboard */,
@@ -126,6 +129,14 @@
 				5E9259B41CB9F257009EB918 /* Info.plist */,
 			);
 			path = SwiftUIKitCatalogUITests;
+			sourceTree = "<group>";
+		};
+		5E9259C21CBB948B009EB918 /* UIKitControllers */ = {
+			isa = PBXGroup;
+			children = (
+				5E9259C31CBB94BD009EB918 /* ActivityIndicatorTableController.swift */,
+			);
+			path = UIKitControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,9 +270,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E9259921CB9F257009EB918 /* ViewController.swift in Sources */,
 				5E9259981CB9F257009EB918 /* SwiftUIKitCatalog.xcdatamodeld in Sources */,
 				5E9259901CB9F257009EB918 /* AppDelegate.swift in Sources */,
+				5E9259C11CBA212D009EB918 /* UIColor+ApplicationSpecific.swift in Sources */,
+				5E9259C41CBB94BD009EB918 /* ActivityIndicatorTableController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -488,6 +500,7 @@
 				5E9259B91CB9F257009EB918 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5E9259BA1CB9F257009EB918 /* Build configuration list for PBXNativeTarget "SwiftUIKitCatalogTests" */ = {
 			isa = XCConfigurationList;
@@ -496,6 +509,7 @@
 				5E9259BC1CB9F257009EB918 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5E9259BD1CB9F257009EB918 /* Build configuration list for PBXNativeTarget "SwiftUIKitCatalogUITests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +518,7 @@
 				5E9259BF1CB9F257009EB918 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

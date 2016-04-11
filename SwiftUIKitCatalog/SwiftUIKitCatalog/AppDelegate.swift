@@ -9,14 +9,19 @@
 import UIKit
 import CoreData
 
+
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate,UISplitViewControllerDelegate {
 
     var window: UIWindow?
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        let splitViewController = window!.rootViewController as! UISplitViewController //http://nshipster.cn/uisplitviewcontroller/
+        splitViewController.view.backgroundColor = UIColor.applicationGreenColor;
+        splitViewController.delegate = self
+        splitViewController.preferredDisplayMode = .AllVisible
         return true
     }
 
